@@ -1,0 +1,18 @@
+command /udrzbaon:
+	permission: admin.udrzba
+	permission message: "&8» &cNemáš práva!"
+	trigger:
+		set {lockdownsystem} to true
+		loop all players:
+			if loop-player has permission "admin.lockdown":
+				send "&8» &aPrávě začala udržba!" to loop-player
+			else:
+				broadcast "&f » &7Hráč &f%player% &7se pokusil připojit po čas udržby!"
+				kick the loop-player due to "&cNa serveru probíhá uzdžba!"
+
+command /udrzbaoff:
+	permission: admin.udrzba
+	permission message: "&8» &cNemáš práváva!"
+	trigger:
+		delete {lockdownsystem} 
+		broadcast "&8» &aÚdržba zkončila!"
