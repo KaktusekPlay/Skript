@@ -1,0 +1,60 @@
+function censor(p:player):
+        play sound "block.anvil.place" with volume 0.5 to {_p}
+        send "&c&m-------------------------------------------------" to {_p}
+        send "&cByl jsi zablokovaný!!." to {_p}
+        send "&cKvůli nadávání v chatu jsi zablokovaný!" to {_p}
+        send "&cJestli se jedná o chybu napiš nám!" to {_p}
+        send "&c&m-------------------------------------------------" to {_p}
+
+on chat:
+    if message contains "fuck":
+        cancel event
+        censor(player)
+    if message contains "bitch":
+        cancel event
+        censor(player)
+    if message contains "kokot":
+        cancel event
+        censor(player)
+    if message contains "kurva":
+        cancel event
+        censor(player)
+    if message contains "pica":
+        cancel event
+        censor(player)
+    if message contains "piča":
+        cancel event
+        censor(player)
+    if message contains "debile":
+        cancel event
+        censor(player)
+    if message contains "píčo":
+        cancel event
+        censor(player)
+    if message contains "kurvo":
+        cancel event
+        censor(player)
+    if message contains "retard":
+        cancel event
+        censor(player)
+    if message contains "cigáň":
+        cancel event
+        censor(player)
+    if message contains "cigan":
+        cancel event
+        censor(player)
+    if message contains "nigg":
+        cancel event
+        censor(player) 
+    if message contains "nig":
+        cancel event
+        censor(player)
+    if message contains "neg":
+        cancel event
+        censor(player)
+    if message contains "jeb":
+        cancel event
+        censor(player) 
+    if message contains "pici":
+        cancel event
+        censor(player)
